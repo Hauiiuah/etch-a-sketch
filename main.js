@@ -48,7 +48,7 @@ const drawGrid = (root, count, size) => {
 		for (let j = 0; j < count; j++) {
 			const column = document.createElement("div");
 			column.id = i * j;
-			column.addEventListener("mousemove", onMove);
+			column.addEventListener("mouseenter", onMove);
 			column.classList.add("column");
 			column.style.cssText = `width: ${size}px; height: ${size}px;`;
 			row.appendChild(column);
